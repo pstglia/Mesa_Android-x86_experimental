@@ -27,6 +27,13 @@ LOCAL_C_INCLUDES += \
 	$(GALLIUM_TOP)/include \
 	$(GALLIUM_TOP)/auxiliary \
 	$(GALLIUM_TOP)/winsys \
-	$(GALLIUM_TOP)/drivers
+	$(GALLIUM_TOP)/drivers \
+	$(DRM_TOP) \
+	$(DRM_TOP)/radeon \
+	$(DRM_TOP)/nouveau \
+	$(DRM_TOP)/include/drm \
+	$(MESA_TOP)/src
+
+
 
 include $(MESA_COMMON_MK)

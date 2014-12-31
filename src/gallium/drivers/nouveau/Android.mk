@@ -37,10 +37,12 @@ LOCAL_SRC_FILES := \
 	$(NVC0_C_SOURCES)
 
 LOCAL_C_INCLUDES := \
-	$(TARGET_OUT_HEADERS)/libdrm
+	$(TARGET_OUT_HEADERS)/libdrm \
+	$(MESA_TOP)/../../prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/4.8/include \
+	$(MESA_TOP)/../../prebuilts/ndk/9/sources/cxx-stl/gnu-libstdc++/4.8/libs/x86/include \
 
 LOCAL_MODULE := libmesa_pipe_nouveau
 
-include external/stlport/libstlport.mk
+#include external/stlport/libstlport.mk
 include $(GALLIUM_COMMON_MK)
 include $(BUILD_STATIC_LIBRARY)
