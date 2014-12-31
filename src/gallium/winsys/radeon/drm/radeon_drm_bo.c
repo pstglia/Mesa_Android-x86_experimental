@@ -303,7 +303,7 @@ static void radeon_bo_destroy(struct pb_buffer *_buf)
     pipe_mutex_unlock(bo->mgr->bo_handles_mutex);
 
     if (bo->ptr)
-        os_munmap(bo->ptr, bo->base.size);
+        munmap(bo->ptr, bo->base.size);
 
     /* Close object. */
     args.handle = bo->handle;
