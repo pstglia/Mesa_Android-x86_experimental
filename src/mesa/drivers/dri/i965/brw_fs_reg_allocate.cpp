@@ -312,6 +312,7 @@ count_to_loop_end(const bblock_t *block)
       }
    }
    unreachable("not reached");
+	return 0;
 }
 
 /**

@@ -71,6 +71,7 @@ intel_translate_shadow_compare_func(GLenum func)
    }
 
    unreachable("Invalid shadow comparison function.");
+	return 0;
 }
 
 int
@@ -96,6 +97,7 @@ intel_translate_compare_func(GLenum func)
    }
 
    unreachable("Invalid comparison function.");
+	return 0;
 }
 
 int

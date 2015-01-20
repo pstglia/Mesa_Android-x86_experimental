@@ -87,6 +87,7 @@ br13_for_cpp(int cpp)
    default:
       unreachable("not reached");
    }
+	return 0;
 }
 
 /**

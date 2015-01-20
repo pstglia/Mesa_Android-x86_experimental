@@ -2157,6 +2157,7 @@ fs_visitor::gather_channel(int orig_chan, uint32_t sampler)
       default:
          unreachable("Not reached"); /* zero, one swizzles handled already */
    }
+	return 0;
 }
 
 /**
@@ -3160,6 +3161,7 @@ cond_for_alpha_func(GLenum func)
       default:
          unreachable("Not reached");
    }
+	return BRW_CONDITIONAL_EQ;
 }
 
 /**

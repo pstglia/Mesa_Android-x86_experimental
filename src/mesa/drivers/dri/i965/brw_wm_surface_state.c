@@ -75,6 +75,7 @@ translate_tex_target(GLenum target)
    default:
       unreachable("not reached");
    }
+	return BRW_SURFACE_1D;
 }
 
 uint32_t

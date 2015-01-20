@@ -60,6 +60,7 @@ brw_swizzle_to_scs(GLenum swizzle, bool need_green_to_blue)
    }
 
    unreachable("Should not get here: invalid swizzle mode");
+	return HSW_SCS_RED;
 }
 
 uint32_t

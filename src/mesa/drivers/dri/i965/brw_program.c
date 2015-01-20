@@ -110,6 +110,7 @@ static struct gl_program *brwNewProgram( struct gl_context *ctx,
    default:
       unreachable("Unsupported target in brwNewProgram()");
    }
+	return NULL;
 }
 
 static void brwDeleteProgram( struct gl_context *ctx,

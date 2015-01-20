@@ -64,6 +64,7 @@ vertical_alignment(struct intel_mipmap_tree *mt)
    default:
       unreachable("Unsupported vertical surface alignment.");
    }
+	return 0;
 }
 
 static unsigned
@@ -79,6 +80,7 @@ horizontal_alignment(struct intel_mipmap_tree *mt)
    default:
       unreachable("Unsupported horizontal surface alignment.");
    }
+	return 0;
 }
 
 static uint32_t *

@@ -315,6 +315,7 @@ brw_conditional_for_comparison(unsigned int op)
    default:
       unreachable("not reached: bad operation for comparison");
    }
+	return BRW_CONDITIONAL_Z;
 }
 
 uint32_t
@@ -344,6 +345,7 @@ brw_math_function(enum opcode op)
    default:
       unreachable("not reached: unknown math function");
    }
+	return 0;
 }
 
 uint32_t

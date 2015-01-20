@@ -926,6 +926,7 @@ fs_inst::regs_read(fs_visitor *v, int arg) const
    default:
       unreachable("Invalid register file");
    }
+	return 1;
 }
 
 bool
@@ -1000,6 +1001,7 @@ fs_visitor::implied_mrf_writes(fs_inst *inst)
    default:
       unreachable("not reached");
    }
+	return 0;
 }
 
 int

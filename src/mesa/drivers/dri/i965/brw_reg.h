@@ -361,6 +361,7 @@ brw_vecn_reg(unsigned width, unsigned file, unsigned nr, unsigned subnr)
    default:
       unreachable("Invalid register width");
    }
+	return brw_vec1_reg(file, nr, subnr);;
 }
 
 static inline struct brw_reg

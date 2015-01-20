@@ -297,6 +297,7 @@ vec4_visitor::implied_mrf_writes(vec4_instruction *inst)
    default:
       unreachable("not reached");
    }
+	return 0;
 }
 
 bool

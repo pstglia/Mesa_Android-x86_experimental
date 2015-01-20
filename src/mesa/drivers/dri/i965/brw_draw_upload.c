@@ -342,6 +342,7 @@ brw_get_vertex_surface_type(struct brw_context *brw,
       default: unreachable("not reached");
       }
    }
+	return 0;
 }
 
 unsigned
@@ -353,6 +354,7 @@ brw_get_index_type(GLenum type)
    case GL_UNSIGNED_INT:   return BRW_INDEX_DWORD;
    default: unreachable("not reached");
    }
+	return BRW_INDEX_BYTE;
 }
 
 static void

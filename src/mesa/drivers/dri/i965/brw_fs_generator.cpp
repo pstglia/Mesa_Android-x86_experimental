@@ -1199,6 +1199,7 @@ static uint32_t brw_file_from_reg(fs_reg *reg)
    default:
       unreachable("not reached");
    }
+	return 0;
 }
 
 struct brw_reg

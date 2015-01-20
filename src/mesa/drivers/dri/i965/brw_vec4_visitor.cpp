@@ -2664,6 +2664,7 @@ vec4_visitor::gather_channel(ir_texture *ir, uint32_t sampler)
       default:
          unreachable("Not reached"); /* zero, one swizzles handled already */
    }
+	return 0;
 }
 
 void

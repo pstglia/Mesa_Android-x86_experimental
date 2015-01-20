@@ -53,6 +53,7 @@ GLuint brw_translate_blend_equation( GLenum mode )
    default:
       unreachable("not reached");
    }
+	return BRW_BLENDFUNCTION_ADD;
 }
 
 GLuint brw_translate_blend_factor( GLenum factor )
@@ -101,4 +102,5 @@ GLuint brw_translate_blend_factor( GLenum factor )
    default:
       unreachable("not reached");
    }
+	return BRW_BLENDFACTOR_ZERO;
 }

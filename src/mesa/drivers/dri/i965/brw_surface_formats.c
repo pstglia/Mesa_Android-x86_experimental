@@ -786,6 +786,7 @@ brw_depth_format(struct brw_context *brw, mesa_format format)
    default:
       unreachable("Unexpected depth format.");
    }
+	return 0;
 }
 
 /** Can HiZ be enabled on a depthbuffer of the given format? */
